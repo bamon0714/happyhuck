@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Huck</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/jquery.bgswitcher.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/setting.js"></script>
 
     
 </head>
 <body>
+  <div class="wrap"></div>
   <section class="firstview">
     <header>
+        <nav>
+             <ul>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#images">Images</a></li>
+              <li><a href="#Access">Access</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <div class="title">
@@ -22,10 +39,15 @@
        <p>We are Web Designers.</p>
     </div>
   </section>
-  <section class="intro">
+
+
+
+  <div class="fadein">
+  <section class="intro" id="intro">
+    
     <h2>Introduction</h2>
       <div class="intro_detail">
-         <img src="images/introduction_001.jpg" alt="" width="500">
+         <img src="images/introduction_001.jpg" alt="" width="480" height="320">
           <div class="intro_content_right">
             <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
                特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
@@ -34,90 +56,112 @@
           </div> 
         </div>
         
-         <div cklass="intro_detail2">
-          <img src="images/introduction_002.jpg" alt="" width="500">
+         <div class="intro_detail2">
            <div class="intro_content_left">
             <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
                WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
                自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
             <a href="http://127.0.0.1:5500/">会員登録</a>
            </div> 
+           <img src="images/introduction_002.jpg" alt=""  width="480" height="320">
          </div>
       </div>
+    </div>
    </section>
 
-   <section class="course">
+   <section  class="courses" id="courses">
+    <div class="fadein">
+    <div id="particles-js"></div>
      <h2>Courses</h2>
+     <div class="course">
+      <div id="hoge"></div>
      <div class="course-container">
-       <div class="course_info">
-        <div class="course_img">
-         <img src="images/html.png" alt="">
-        </div>
-        <h3>HTMLコース</h3>
-        <a href="">このコースを受ける</a>
-        </div> 
-       </div> 
+
+        <div class="course_info">
+          
+            <div class="course_img">
+             <img src="images/html.png" alt="">
+            </div>
+            <h3>HTMLコース</h3>
+            <a href="" class="html">このコースを受ける</a>
+            </div>
+
         <div class="course_info">
          <div class="course_img">
           <img src="images/css.png" alt="">
          </div>
          <h3>CSSコース</h3>
-         <a href="">このコースを受ける</a>
+         <a href="" class="css">このコースを受ける</a>
          </div> 
-        </div> 
+
         <div class="course_info">
            <div class="course_img">
              <img src="images/unity.png" alt="">
             </div>
             <h3>Unityコース</h3>
-            <a href="">このコースを受ける</a>
+            <a href="" class="unity">このコースを受ける</a>
           </div> 
-        </div> 
+
         <div class="course_info">
             <div class="course_img">
              <img src="images/ruby.png" alt="">
             </div>
             <h3>Rubyコース</h3>
-            <a href="">このコースを受ける</a>
-
+            <a href="" class="ruby">このコースを受ける</a>
         </div> 
+
         <div class="course_info">
             <div class="course_img">
              <img src="images/js.png" alt="">
             </div>
             <h3>JavaScriptコース</h3>
-            <a href="">このコースを受ける</a>
-        </div> 
+            <a href="" class="js">このコースを受ける</a>
+        </div>
+
         <div class="course_info">
           <div class="course_img">
              <img src="images/swift.png" alt="">
           </div>
             <h3>Swiftコース</h3>
-            <a href="">このコースを受ける</a>
+            <a href="" class="swift">このコースを受ける</a>
         </div> 
+
         <div class="course_info">
           <div class="course_img">
              <img src="images/go.png" alt="">
           </div>
           <h3>Goコース</h3>
-          <a href="">このコースを受ける</a>
+          <a href="" class="go">このコースを受ける</a>
         </div>
+
      </div>
-   </section>
-
-  <section class="image">
-    <h2>Images</h2>
-    <div class="slick">
-
     </div>
+    </div>
+   </section>
+  </div>
 
 
+   <div class="fadein">
+  <section class="images" id="images">
+     <h2>Images</h2>
+     <div class="slider">
+             <img src="images/background1.jpg" alt="" class="slide-img"><img src="images/background2.jpg" alt="" class="slide-img"><img src="images/background3.jpg" alt="" class="slide-img"><img src="images/background4.jpg" alt="" class="slide-img"><img src="images/background5.jpg" alt="" class="slide-img">
+         </div>
   </section> 
+</div>
 
-  <section class="accsess">
-    <h2>Accsess</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.25251200182!2d135.4924486!3d34.6972813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1662910497579!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
 
+<div class="fadein">
+  <section class="access" id="access">
+   
+     <h2>Access</h2>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.25251200182!2d135.4924486!3d34.6972813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1662910497579!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+ </section>
+</div>
+
+  <footer>
+    <p>© 2019 Happy Hack Inc.</p>    
+  </footer>
 </body>
 </html>
